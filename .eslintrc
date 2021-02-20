@@ -1,0 +1,22 @@
+{
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "babel-module": {
+        "alias": {
+          "navigation": "./src/navigation",
+          "screens": "./src/screens",
+          "components": "./src/components",
+          "utils": "./src/utils",
+          "hooks": "./src/hooks",
+          "i18n": "./src/i18n",
+          "libs": "./src/libs"
+        }
+      }
+    }
+  },
+  "extends": "@callstack"
+}
