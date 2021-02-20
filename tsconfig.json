@@ -7,6 +7,19 @@
     "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "components": ["src/components/index.ts"],
+      "constants/*": ["src/constants/*"],
+      "constants": ["src/constants/index.ts"],
+      "hooks/*": ["src/hooks/*"],
+      "hooks": ["src/hooks/index.ts"],
+      "screens/*": ["src/screens/*"],
+      "screens": ["src/screens/index.ts"],
+      "types/*": ["src/types/*"],
+      "types": ["src/types/index.tsx"],    
+    }
   }
 }
