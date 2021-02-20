@@ -19,7 +19,11 @@
       "screens/*": ["src/screens/*"],
       "screens": ["src/screens/index.ts"],
       "types/*": ["src/types/*"],
-      "types": ["src/types/index.tsx"],    
+      "types": ["src/types/index.tsx"],
+      "theme/*": ["src/theme/*"],
+      "theme": ["src/theme/index.ts"],
+      "common/*": ["src/common/*"],
+      "common": ["src/common/index.ts"],
     }
   }
 }

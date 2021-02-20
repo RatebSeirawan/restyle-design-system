@@ -1,27 +1,47 @@
-const path = require('path')
+const path = require("path");
 
-const ROOT_PATH = path.resolve(__dirname, './');
-const BASE_PATH = path.resolve(ROOT_PATH, './src/');
+const ROOT_PATH = path.resolve(__dirname, "./");
+const BASE_PATH = path.resolve(ROOT_PATH, "./src/");
 
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     plugins: [
       [
-        'module-resolver',
+        "module-resolver",
         {
-          extensions: ['.js', '.jsx', '.ts', '.tsx', '.ios.ts', '.ios.tsx', '.android.ts', '.android.tsx', '.json', '.svg', '.png', '.jpg', '.native.ts', '.native.tsx', '.shared.ts', '.shared.tsx', '.web.css'],
+          extensions: [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+            ".ios.ts",
+            ".ios.tsx",
+            ".android.ts",
+            ".android.tsx",
+            ".json",
+            ".svg",
+            ".png",
+            ".jpg",
+            ".native.ts",
+            ".native.tsx",
+            ".shared.ts",
+            ".shared.tsx",
+            ".web.css",
+          ],
           alias: {
-            components: path.resolve(BASE_PATH, 'components'),
-            constants: path.resolve(BASE_PATH, 'constants'),
-            hooks: path.resolve(BASE_PATH, 'hooks'),
-            screens: path.resolve(BASE_PATH, 'screens'),
-            types: path.resolve(BASE_PATH, 'types'),
-            assets: path.resolve(ROOT_PATH, 'assets'),
+            components: path.resolve(BASE_PATH, "components"),
+            constants: path.resolve(BASE_PATH, "constants"),
+            hooks: path.resolve(BASE_PATH, "hooks"),
+            screens: path.resolve(BASE_PATH, "screens"),
+            types: path.resolve(BASE_PATH, "types"),
+            theme: path.resolve(BASE_PATH, "theme"),
+            common: path.resolve(BASE_PATH, "common"),
+            assets: path.resolve(ROOT_PATH, "assets"),
           },
         },
       ],
     ],
-    presets: ['babel-preset-expo'],
+    presets: ["babel-preset-expo"],
   };
 };
