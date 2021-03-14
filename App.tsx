@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { MyScreen } from "./test";
 import { ThemeProvider } from "theme";
 import useCachedResources from "hooks/useCachedResources";
 import useColorScheme from "hooks/useColorScheme";
@@ -14,6 +15,7 @@ export default function App() {
   if (!isLoadingComplete) {
     return null;
   } else {
+    return <MyScreen />;
     return (
       <ThemeProvider>
         <SafeAreaProvider>
